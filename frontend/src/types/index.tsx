@@ -1,17 +1,30 @@
-export interface Conference {
-  id: number;
-  title: string;
-  type: 'academic' | 'commercial';
-  date: string;
-  duration: string;
-  registrations: number;
-  score: number;
+export interface Check {
+  id: string;
+  checkNumber: string;
+  bankCode: string;
+  accountNumber: string;
+  customerName: string;
+  amount: number;
+  isCertified: boolean;
 }
 
-export interface Keynote {
-  id: number;
-  nom: string;
-  prenom: string;
-  email: string;
-  fonction: string;
+export interface BankAgency {
+  id: string;
+  name: string;
+  city: string;
+  serviceUrl: string;
+}
+
+export type OperationType =
+  | 'DEBIT'
+  | 'CREDIT'
+  | 'CERTIFICATION_CHEQUE';
+
+export interface Operation {
+  id: string;
+  date: string;
+  amount: number;
+  checkNumber: string;
+  type: OperationType;
+  description: string;
 }

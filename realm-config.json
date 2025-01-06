@@ -22,7 +22,7 @@
       "username": "admin_user",
       "enabled": true,
       "email": "admin@example.com",
-      "credentials": [
+      "credentials": import { Header } from './components/Header';[
         {
           "type": "password",
           "value": "test123",

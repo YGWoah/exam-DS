@@ -2,8 +2,8 @@ import Keycloak from 'keycloak-js';
 
 const keycloakConfig = {
   url: 'http://localhost:8080',
-  realm: 'conference-realm',
-  clientId: 'conference-client',
+  realm: 'certification-realm',
+  clientId: 'certification-client',
 };
 
 class KeycloakService {

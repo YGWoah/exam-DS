@@ -4,7 +4,7 @@ import { AuthProvider } from './contexts/KeyCloakAuthContext';
 const ProviderWrapper = () => {
   return (
     <AuthProvider>
-      <App></App>
+      <App />
     </AuthProvider>
   );
 };

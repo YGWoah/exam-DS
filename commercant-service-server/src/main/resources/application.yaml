@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: COMMERCANT-SERVICE-SERVER
+      profile: default
+      label: main
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/certification-realm
+          jwk-set-uri: http://localhost:8080/realms/certification-realm/protocol/openid-connect/certs
